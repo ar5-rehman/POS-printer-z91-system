@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-posfoodapp-staging-211521-authRole",
+      "UnauthRoleArn": "arn:aws:iam::760333305155:role/amplify-posfoodapp-staging-211521-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::760333305155:role/amplify-posfoodapp-staging-211521-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-posfoodapp-staging-211521-deployment",
+      "UnauthRoleName": "amplify-posfoodapp-staging-211521-unauthRole",
+      "StackName": "amplify-posfoodapp-staging-211521",
+      "StackId": "arn:aws:cloudformation:eu-central-1:760333305155:stack/amplify-posfoodapp-staging-211521/2e50b410-e328-11eb-a5e2-063082aaa6b2",
+      "AmplifyAppId": "d30zfbiadgbfrf"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/neworders"
+        android:title="Nye ordre" />
+
+    <item
+        android:id="@+id/faerorders"
+        android:title="Faerdige ordre" />
+
+    <item
+        android:id="@+id/acceptedorder"
+        android:title="Acceptede ordre" />
+    <item
+        android:id="@+id/annulorder"
+        android:title="Annulleret ordre" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logud" />
+
+</menu>

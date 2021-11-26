@@ -1,0 +1,396 @@
+# this is an auto generated file. This will be overwritten
+query GetFood($id: ID!) {
+  getFood(id: $id) {
+    id
+    restaurantId
+    name
+    photo
+    description
+    calories
+    price
+    duration
+    categorie
+    ingredients
+    menuNr
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListFoods(
+  $filter: ModelFoodFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listFoods(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      restaurantId
+      name
+      photo
+      description
+      calories
+      price
+      duration
+      categorie
+      ingredients
+      menuNr
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncFoods(
+  $filter: ModelFoodFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncFoods(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      restaurantId
+      name
+      photo
+      description
+      calories
+      price
+      duration
+      categorie
+      ingredients
+      menuNr
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetRestaurant($id: ID!) {
+  getRestaurant(id: $id) {
+    id
+    restaurantID
+    name
+    categories
+    address
+    city
+    zipCode
+    logo
+    rating
+    minDelivery
+    duration
+    deliveryCost
+    menu
+    priceRating
+    phone
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListRestaurants(
+  $filter: ModelRestaurantFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listRestaurants(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      restaurantID
+      name
+      categories
+      address
+      city
+      zipCode
+      logo
+      rating
+      minDelivery
+      duration
+      deliveryCost
+      menu
+      priceRating
+      phone
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncRestaurants(
+  $filter: ModelRestaurantFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncRestaurants(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      restaurantID
+      name
+      categories
+      address
+      city
+      zipCode
+      logo
+      rating
+      minDelivery
+      duration
+      deliveryCost
+      menu
+      priceRating
+      phone
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetOrder($id: ID!) {
+  getOrder(id: $id) {
+    id
+    customerID
+    customerName
+    foodItems
+    email
+    total
+    status
+    address
+    updatedAt
+    derliveryTime
+    addedTime
+    restaurantNote
+    restaurantID
+    restaurantName
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListOrders(
+  $filter: ModelOrderFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listOrders(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      customerID
+      customerName
+      foodItems
+      email
+      total
+      status
+      address
+      updatedAt
+      derliveryTime
+      addedTime
+      restaurantNote
+      restaurantID
+      restaurantName
+      createdAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncOrders(
+  $filter: ModelOrderFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncOrders(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      customerID
+      customerName
+      foodItems
+      email
+      total
+      status
+      address
+      updatedAt
+      derliveryTime
+      addedTime
+      restaurantNote
+      restaurantID
+      restaurantName
+      createdAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetOrderItem($id: ID!) {
+  getOrderItem(id: $id) {
+    id
+    orderId
+    foodId
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+query ListOrderItems(
+  $filter: ModelOrderItemFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listOrderItems(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      orderId
+      foodId
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncOrderItems(
+  $filter: ModelOrderItemFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncOrderItems(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      orderId
+      foodId
+      _version
+      _deleted
+      _lastChangedAt
+      createdAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetCustomer($id: ID!) {
+  getCustomer(id: $id) {
+    id
+    name
+    email
+    phone
+    customerID
+    address
+    city
+    zipCode
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+query ListCustomers(
+  $filter: ModelCustomerFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listCustomers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      email
+      phone
+      customerID
+      address
+      city
+      zipCode
+      createdAt
+      _version
+      _deleted
+      _lastChangedAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncCustomers(
+  $filter: ModelCustomerFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncCustomers(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      name
+      email
+      phone
+      customerID
+      address
+      city
+      zipCode
+      createdAt
+      _version
+      _deleted
+      _lastChangedAt
+      updatedAt
+    }
+    nextToken
+    startedAt
+  }
+}

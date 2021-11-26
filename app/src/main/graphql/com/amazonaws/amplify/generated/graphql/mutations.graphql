@@ -1,0 +1,337 @@
+# this is an auto generated file. This will be overwritten
+mutation CreatePayment($input: PaymentInput) {
+  createPayment(input: $input) {
+    statusCode
+    body
+  }
+}
+mutation CreateFood(
+  $input: CreateFoodInput!
+  $condition: ModelFoodConditionInput
+) {
+  createFood(input: $input, condition: $condition) {
+    id
+    restaurantId
+    name
+    photo
+    description
+    calories
+    price
+    duration
+    categorie
+    ingredients
+    menuNr
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateFood(
+  $input: UpdateFoodInput!
+  $condition: ModelFoodConditionInput
+) {
+  updateFood(input: $input, condition: $condition) {
+    id
+    restaurantId
+    name
+    photo
+    description
+    calories
+    price
+    duration
+    categorie
+    ingredients
+    menuNr
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteFood(
+  $input: DeleteFoodInput!
+  $condition: ModelFoodConditionInput
+) {
+  deleteFood(input: $input, condition: $condition) {
+    id
+    restaurantId
+    name
+    photo
+    description
+    calories
+    price
+    duration
+    categorie
+    ingredients
+    menuNr
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateRestaurant(
+  $input: CreateRestaurantInput!
+  $condition: ModelRestaurantConditionInput
+) {
+  createRestaurant(input: $input, condition: $condition) {
+    id
+    restaurantID
+    name
+    categories
+    address
+    city
+    zipCode
+    logo
+    rating
+    minDelivery
+    duration
+    deliveryCost
+    menu
+    priceRating
+    phone
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateRestaurant(
+  $input: UpdateRestaurantInput!
+  $condition: ModelRestaurantConditionInput
+) {
+  updateRestaurant(input: $input, condition: $condition) {
+    id
+    restaurantID
+    name
+    categories
+    address
+    city
+    zipCode
+    logo
+    rating
+    minDelivery
+    duration
+    deliveryCost
+    menu
+    priceRating
+    phone
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteRestaurant(
+  $input: DeleteRestaurantInput!
+  $condition: ModelRestaurantConditionInput
+) {
+  deleteRestaurant(input: $input, condition: $condition) {
+    id
+    restaurantID
+    name
+    categories
+    address
+    city
+    zipCode
+    logo
+    rating
+    minDelivery
+    duration
+    deliveryCost
+    menu
+    priceRating
+    phone
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateOrder(
+  $input: CreateOrderInput!
+  $condition: ModelOrderConditionInput
+) {
+  createOrder(input: $input, condition: $condition) {
+    id
+    customerID
+    customerName
+    foodItems
+    email
+    total
+    status
+    address
+    updatedAt
+    derliveryTime
+    addedTime
+    restaurantNote
+    restaurantID
+    restaurantName
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateOrder(
+  $input: UpdateOrderInput!
+  $condition: ModelOrderConditionInput
+) {
+  updateOrder(input: $input, condition: $condition) {
+    id
+    customerID
+    customerName
+    foodItems
+    email
+    total
+    status
+    address
+    updatedAt
+    derliveryTime
+    addedTime
+    restaurantNote
+    restaurantID
+    restaurantName
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteOrder(
+  $input: DeleteOrderInput!
+  $condition: ModelOrderConditionInput
+) {
+  deleteOrder(input: $input, condition: $condition) {
+    id
+    customerID
+    customerName
+    foodItems
+    email
+    total
+    status
+    address
+    updatedAt
+    derliveryTime
+    addedTime
+    restaurantNote
+    restaurantID
+    restaurantName
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateOrderItem(
+  $input: CreateOrderItemInput!
+  $condition: ModelOrderItemConditionInput
+) {
+  createOrderItem(input: $input, condition: $condition) {
+    id
+    orderId
+    foodId
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateOrderItem(
+  $input: UpdateOrderItemInput!
+  $condition: ModelOrderItemConditionInput
+) {
+  updateOrderItem(input: $input, condition: $condition) {
+    id
+    orderId
+    foodId
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteOrderItem(
+  $input: DeleteOrderItemInput!
+  $condition: ModelOrderItemConditionInput
+) {
+  deleteOrderItem(input: $input, condition: $condition) {
+    id
+    orderId
+    foodId
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateCustomer(
+  $input: CreateCustomerInput!
+  $condition: ModelCustomerConditionInput
+) {
+  createCustomer(input: $input, condition: $condition) {
+    id
+    name
+    email
+    phone
+    customerID
+    address
+    city
+    zipCode
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+mutation UpdateCustomer(
+  $input: UpdateCustomerInput!
+  $condition: ModelCustomerConditionInput
+) {
+  updateCustomer(input: $input, condition: $condition) {
+    id
+    name
+    email
+    phone
+    customerID
+    address
+    city
+    zipCode
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+mutation DeleteCustomer(
+  $input: DeleteCustomerInput!
+  $condition: ModelCustomerConditionInput
+) {
+  deleteCustomer(input: $input, condition: $condition) {
+    id
+    name
+    email
+    phone
+    customerID
+    address
+    city
+    zipCode
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}

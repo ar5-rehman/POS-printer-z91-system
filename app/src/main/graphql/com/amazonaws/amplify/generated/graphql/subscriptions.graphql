@@ -1,0 +1,286 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateFood {
+  onCreateFood {
+    id
+    restaurantId
+    name
+    photo
+    description
+    calories
+    price
+    duration
+    categorie
+    ingredients
+    menuNr
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateFood {
+  onUpdateFood {
+    id
+    restaurantId
+    name
+    photo
+    description
+    calories
+    price
+    duration
+    categorie
+    ingredients
+    menuNr
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteFood {
+  onDeleteFood {
+    id
+    restaurantId
+    name
+    photo
+    description
+    calories
+    price
+    duration
+    categorie
+    ingredients
+    menuNr
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateRestaurant {
+  onCreateRestaurant {
+    id
+    restaurantID
+    name
+    categories
+    address
+    city
+    zipCode
+    logo
+    rating
+    minDelivery
+    duration
+    deliveryCost
+    menu
+    priceRating
+    phone
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateRestaurant {
+  onUpdateRestaurant {
+    id
+    restaurantID
+    name
+    categories
+    address
+    city
+    zipCode
+    logo
+    rating
+    minDelivery
+    duration
+    deliveryCost
+    menu
+    priceRating
+    phone
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteRestaurant {
+  onDeleteRestaurant {
+    id
+    restaurantID
+    name
+    categories
+    address
+    city
+    zipCode
+    logo
+    rating
+    minDelivery
+    duration
+    deliveryCost
+    menu
+    priceRating
+    phone
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateOrder {
+  onCreateOrder {
+    id
+    customerID
+    customerName
+    foodItems
+    email
+    total
+    status
+    address
+    updatedAt
+    derliveryTime
+    addedTime
+    restaurantNote
+    restaurantID
+    restaurantName
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateOrder {
+  onUpdateOrder {
+    id
+    customerID
+    customerName
+    foodItems
+    email
+    total
+    status
+    address
+    updatedAt
+    derliveryTime
+    addedTime
+    restaurantNote
+    restaurantID
+    restaurantName
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteOrder {
+  onDeleteOrder {
+    id
+    customerID
+    customerName
+    foodItems
+    email
+    total
+    status
+    address
+    updatedAt
+    derliveryTime
+    addedTime
+    restaurantNote
+    restaurantID
+    restaurantName
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateOrderItem {
+  onCreateOrderItem {
+    id
+    orderId
+    foodId
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateOrderItem {
+  onUpdateOrderItem {
+    id
+    orderId
+    foodId
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteOrderItem {
+  onDeleteOrderItem {
+    id
+    orderId
+    foodId
+    _version
+    _deleted
+    _lastChangedAt
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateCustomer {
+  onCreateCustomer {
+    id
+    name
+    email
+    phone
+    customerID
+    address
+    city
+    zipCode
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+subscription OnUpdateCustomer {
+  onUpdateCustomer {
+    id
+    name
+    email
+    phone
+    customerID
+    address
+    city
+    zipCode
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
+subscription OnDeleteCustomer {
+  onDeleteCustomer {
+    id
+    name
+    email
+    phone
+    customerID
+    address
+    city
+    zipCode
+    createdAt
+    _version
+    _deleted
+    _lastChangedAt
+    updatedAt
+  }
+}
